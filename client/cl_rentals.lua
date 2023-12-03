@@ -166,12 +166,12 @@ end)
 
 
 -- Exports to Polyzone Box # Config could also work # MoneSuper
-exports['qb-target']:AddBoxZone("NewRentalMenu4", vector3(1152.78, -373.01, 67.14), 1.4, 1.4, {
+exports['qb-target']:AddBoxZone("NewRentalMenu4", vector3(-833.27, -2351.15, 15.87), 1.4, 1.4, {
   name="NewRentalMenu4",
   heading=8,
   debugPoly=false,
-  minZ = 64.34,
-  maxZ = 68.34,
+  minZ = 14,
+  maxZ = 15,
   }, {
       options = {
           {
@@ -186,51 +186,6 @@ exports['qb-target']:AddBoxZone("NewRentalMenu4", vector3(1152.78, -373.01, 67.1
           },
       },
      distance = 3.5
-})
-
-exports['qb-target']:AddBoxZone("NewRentalMenu5", vector3(463.51, -1676.57, 29.29), 2, 2, {
-  name="NewRentalMenu5",
-  heading=0,
-  debugPoly=false,
-  minZ = 26.89,
-  maxZ = 30.89,
-  }, {
-      options = {
-          {
-              event = "qb-rental:vehiclelist",
-              icon = "fas fa-circle",
-              label = "Rent vehicle",
-          },
-          {
-              event = "qb-rental:returnvehicle",
-              icon = "fas fa-circle",
-              label = "Return Vehicle (Receive Back 50% of original price)",
-          },
-      },
-      distance = 3.5
-})
-
-exports['qb-target']:AddBoxZone("NewRentalMenu6", vector3(-1442.28, -674.07, 26.48), 2, 2, {
-  name="NewRentalMenu6",
-  heading=305,
-  debugPoly=false,
-  minZ = 24.48,
-  maxZ = 28.48,
-  }, {
-      options = {
-          {
-              event = "qb-rental:vehiclelist",
-              icon = "fas fa-circle",
-              label = "Rent vehicle",
-          },
-          {
-              event = "qb-rental:returnvehicle",
-              icon = "fas fa-circle",
-              label = "Return Vehicle (Receive Back 50% of original price)",
-          },
-      },
-      job = {"all"},
-      distance = 3.5
 })
 
 -- Ped Spawner by Don Panino
