@@ -1,3 +1,13 @@
+# DPrpDev UPDATES:
+
+* Added Ped Spawning
+* Added Config for Peds
+* Added Animation for Ped
+
+
+
+
+
 # Video of the script:
 
 * click - https://streamable.com/msejyp
