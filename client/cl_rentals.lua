@@ -232,3 +232,44 @@ exports['qb-target']:AddBoxZone("NewRentalMenu6", vector3(-1442.28, -674.07, 26.
       job = {"all"},
       distance = 3.5
 })
+
+-- Ped Spawner by Don Panino
+local PedsSpawned = false
+
+local function RequestAndLoadModel(model)
+    if type(model) == 'string' then
+        model = GetHashKey(model)
+    end
+    if not IsModelValid(model) then
+        return
+    end
+    RequestModel(model)
+    while not HasModelLoaded(model) do
+        Wait(500)
+    end
+end
+
+local function SpawnPeds()
+    if not Config.Locations or not next(Config.Locations) or PedsSpawned then
+        return
+    end
+    for locationName, locationData in pairs(Config.Locations) do
+        for _, pedData in ipairs(locationData) do
+            local pedModel = pedData.pedmodel
+            local pedCoords = pedData.pedcoords 
+            RequestAndLoadModel(pedModel)
+            local ped = CreatePed(4, pedModel, pedCoords.x, pedCoords.y, pedCoords.z, pedCoords.h, false, false)
+            FreezeEntityPosition(ped, true)
+            SetEntityInvincible(ped, true)
+            SetBlockingOfNonTemporaryEvents(ped, true)
+            TaskStartScenarioInPlace(ped, "WORLD_HUMAN_SMOKING", 0, true)
+        end
+    end
+    PedsSpawned = true
+end
+
+Citizen.CreateThread(function()
+    SpawnPeds()
+end)
+
+
