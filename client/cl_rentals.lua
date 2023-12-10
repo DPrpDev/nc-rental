@@ -217,7 +217,7 @@ local function SpawnPeds()
             FreezeEntityPosition(ped, true)
             SetEntityInvincible(ped, true)
             SetBlockingOfNonTemporaryEvents(ped, true)
-            TaskStartScenarioInPlace(ped, "WORLD_HUMAN_SMOKING", 0, true)
+            TaskStartScenarioInPlace(ped, "WORLD_HUMAN_SMOKING", 0, true) -- Ped Animation
         end
     end
     PedsSpawned = true
