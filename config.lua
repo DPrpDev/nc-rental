@@ -18,41 +18,39 @@ Config.vehicleList = {
 -- Blips 
 Config.Locations = {
     ["rentalstations"] = {
-        [1] = {
-        label = "Rental Stations", 
-        coords = vector4(1152.44, -372.97, 67.2, 270.36),
-        pedmodel = "a_m_m_indian_01", -- Change Ped
-        pedcoords = { 		      -- Change Ped Location
-            x = 1152.44,
-            y = -372.97,
-            z = 67.2,
-            h = 270.36,
+        {
+            label = "Rental Station 1",
+            coords = vector4(1152.78, -373.01, 67.14, 270.36),
+            pedmodel = "a_m_m_indian_01",
+            pedcoords = {
+                x = 1152.78,
+                y = -373.01,
+                z = 66.22,
+                h = 100.36,
             },
         },
-	["rentalstations"] = {
-                [2] = {
-                label = "Rental Stations", 
-                coords = vector4(462.75, -1676.62, 29.29, 5.02),
-                pedmodel = "a_m_m_indian_01", -- Change Ped
-                pedcoords = { 		      -- Change Ped Location
-                    x = 462.75,
-                    y = -1676.62,
-                    z = 29.29,
-                    h = 5.02,
-                    },
-                },
-        ["rentalstations"] = {
-                [3] = {
-                label = "Rental Stations", 
-                coords = vector4(-1442.49, -673.65, 26.53, 288.07),
-                pedmodel = "a_m_m_indian_01", -- Change Ped
-                pedcoords = { 		      -- Change Ped Location
-                    x = -1442.49,
-                    y = -673.65,
-                    z = 26.53,
-                    h = 288.07,
-        	},
-        },	
+        {
+            label = "Rental Station 2",
+            coords = vector4(462.75, -1676.62, 29.29, 5.02),
+            pedmodel = "a_m_m_indian_01",
+            pedcoords = {
+                x = 463.49,
+                y = -1676.12,
+                z = 28.29,
+                h = 151.97,
+            },
+        },
+        {
+            label = "Rental Station 3",
+            coords = vector4(-1442.49, -673.65, 26.53, 288.07),
+            pedmodel = "a_m_m_indian_01",
+            pedcoords = {
+                x = -1442.49,
+                y = -673.65,
+                z = 25.53,
+                h = 212.17,
+            },
+        },
     },
 }
 
