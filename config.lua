@@ -20,13 +20,13 @@ Config.Locations = {
     ["rentalstations"] = {
         [1] = {
         label = "Rental Stations", 
-        coords = vector4(-833.27, -2351.15, 15.87, 282.51),
+        coords = vector4(1152.44, -372.97, 67.2, 270.36),
         pedmodel = "a_m_m_indian_01", -- Change Ped
         pedcoords = { 		      -- Change Ped Location
-            x = -833.31,
-            y = -2351.21,
-            z = 13.68,
-            h = 275.12,
+            x = 1152.44,
+            y = -372.97,
+            z = 67.2,
+            h = 270.36,
             },
         },
     },
