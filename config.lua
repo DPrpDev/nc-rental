@@ -29,14 +29,53 @@ Config.Locations = {
             h = 270.36,
             },
         },
+	["rentalstations"] = {
+                [2] = {
+                label = "Rental Stations", 
+                coords = vector4(462.75, -1676.62, 29.29, 5.02),
+                pedmodel = "a_m_m_indian_01", -- Change Ped
+                pedcoords = { 		      -- Change Ped Location
+                    x = 462.75,
+                    y = -1676.62,
+                    z = 29.29,
+                    h = 5.02,
+                    },
+                },
+        ["rentalstations"] = {
+                [3] = {
+                label = "Rental Stations", 
+                coords = vector4(-1442.49, -673.65, 26.53, 288.07),
+                pedmodel = "a_m_m_indian_01", -- Change Ped
+                pedcoords = { 		      -- Change Ped Location
+                    x = -1442.49,
+                    y = -673.65,
+                    z = 26.53,
+                    h = 288.07,
+        	},
+        },	
     },
 }
 
 Config.vehicleSpawn = {
+    --- Mirror Park
 	[1] = { 
 		workSpawn = {
-			coords = vector3(-833.81, -2363.08, 13.97),
-			heading = 148.88,
+			coords = vector3(1144.69, -383.79, 67.05),
+			heading = 344.69,
+		},
+	},
+    --- Davis 
+    [2] = { 
+		workSpawn = {
+			coords = vector3(460.1, -1699.62, 29.3),
+			heading = 323.94,
+		},
+	},
+ --- Marathon Avenue
+    [3] = { 
+		workSpawn = {
+			coords = vector3(-1444.12, -680.25, 26.39),
+			heading = 122.5,
 		},
 	},
 }
