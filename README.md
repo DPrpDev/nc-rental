@@ -24,7 +24,7 @@ ensure nc-rental
 ```
 
 # Dependencies
-* [nh-context](https://github.com/nighmares/nh-context)
+* [nh-context](https://github.com/nighmares/nh-context) -- Only if not using qb-menu
 * [qb-menu](https://github.com/qbcore-framework/qb-menu)
 
 # Put this line on shared.lua in your core.
